@@ -79,7 +79,7 @@
 </div>
 
 <script>
-    $(document).ready(function() {
-    });
+$(document).ready(function() {
+});
 </script>
 @endsection

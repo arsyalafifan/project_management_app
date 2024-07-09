@@ -27,6 +27,7 @@ class JadwalProyek extends Model
         'dlt'
     ];
 
+    
     protected $casts = [
         'tgladd' => 'datetime',
         'tgledit' => 'datetime',

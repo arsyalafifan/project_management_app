@@ -14,7 +14,7 @@ class JadwalProyekController extends BaseController
 
     public function __construct()
     {
-		$this->page = 'JadwalProyek';
+	     $this->page = 'JadwalProyek';
     }
     /**
      * Display a listing of the resource.

@@ -19,7 +19,6 @@ use App\Http\Controllers\master\ProgramController;
 use App\Http\Controllers\master\KegiatanController;
 use App\Http\Controllers\master\SubkegiatanController;
 use App\Http\Controllers\HelperController;
-use App\Http\Controllers\master\JadwalProyekController;
 use App\Http\Controllers\master\AksesController;
 use App\Http\Controllers\master\PerusahaanController;
 use App\Http\Controllers\master\UserController;
@@ -47,6 +46,7 @@ use App\Http\Controllers\progressproject\ProjectController;
 use App\Http\Controllers\transaksi\PengajuanGajiBerkalaController;
 use App\Http\Controllers\transaksi\CekStatusPegawaiController;
 use App\Http\Controllers\transaksi\RealisasiKebutuhanSarprasController;
+use App\Http\Controllers\master\JadwalProyekController;
 
 // use Illuminate\Support\Facades\Artisan;
 
@@ -407,11 +407,11 @@ Route::middleware(['auth'])->group(function () {
      Route::get('jurusan/nextno', [JurusanController::class, 'getnextno'])->name('jurusan.nextno');
      Route::resource('jurusan', JurusanController::class);
 
+      // Jadwal Proyek
+      Route::resource('jadwalproyek', JadwalProyekController::class);
+
      // Manpower
      Route::resource('manpower', ManpowerController::class);
-
-     // Jadwal Proyek
-     Route::resource('jadwalproyek', JadwalProyekController::class);
 
      // Material
      Route::resource('material', MaterialController::class);
